@@ -1,4 +1,4 @@
-package com.reservasDeAmbientes.Reservas.de.ambientes.Entity;
+package com.reservasDeAmbientes.Entity;
 
 import java.time.LocalDate;
 import jakarta.persistence.Column;

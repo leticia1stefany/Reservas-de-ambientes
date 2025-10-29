@@ -1,4 +1,4 @@
-package com.reservasDeAmbientes.Reservas.de.ambientes;
+package com.reservasDeAmbientes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
