@@ -15,7 +15,6 @@ import lombok.Data;
 @MappedSuperclass
 @Data
 @EntityListeners(AuditingEntityListener.class)
-
 public abstract class BaseEntity {
     
         @Id
@@ -25,17 +24,17 @@ public abstract class BaseEntity {
         @Column(nullable = false)
         private boolean ativo = true;
     
-        @Column
+        @Column(updatable = false)
         @CreatedDate
         private LocalDateTime createdAt;
     
         @Column
         @LastModifiedDate
         private LocalDateTime updateAt;
-    
-        public void setId(Long id){
-            this.id = id;
-        }
+
+        @Column(name = "deleted_at")
+        private LocalDateTime deletedAt;
+
     
     }
 

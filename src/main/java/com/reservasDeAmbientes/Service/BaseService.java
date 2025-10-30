@@ -74,7 +74,6 @@ public abstract class BaseService<E extends BaseEntity, D>{
         for (E e : es){
             dtos.add(toDto(e));
         }
-
         return dtos;
     
     }

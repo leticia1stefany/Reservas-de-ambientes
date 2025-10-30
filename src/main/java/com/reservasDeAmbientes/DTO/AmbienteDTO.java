@@ -2,6 +2,7 @@ package com.reservasDeAmbientes.DTO;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 public class AmbienteDTO {
-
 
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private Long id;
@@ -25,7 +25,7 @@ public class AmbienteDTO {
     @NotBlank(message = "O campo localização deverá ser preenchido")
     private String localizacao;
 
-    @NotBlank(message = "O campo capa0cidade deverá ser preenchido")
+    @NotNull(message = "O campo capa0cidade deverá ser preenchido")
     private int capacidade;
 
 }

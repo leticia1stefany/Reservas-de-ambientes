@@ -12,6 +12,7 @@ public class AmbienteService extends BaseService<Ambiente, AmbienteDTO> {
 
     protected AmbienteService(AmbienteRepository repository){
     super(repository);
-    
+    this.repository = repository;
+
     }
 }
